@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^(.+)\.html$ /professorUI/$1 [R,L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ ./$1.html [NC,END]

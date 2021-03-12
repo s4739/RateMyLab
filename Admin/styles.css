@@ -1,0 +1,229 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    display: block;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+
+    margin: 400px;
+    font-size: 1rem;
+    text-align: left;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Fira Code", "Hack", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 4rem;
+    text-align: left;
+
+  }
+
+  .header-filter {
+    position: relative;
+  }
+  .header-filter:before,
+  .header-filter:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+  }
+  .header-filter::before {
+    background: none;
+  }
+  .header-filter .container {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .page-header {
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .main-raised {
+    margin: -60px 30px 30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+      0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  }
+  .main {
+    background: #ffffff;
+    position: relative;
+    z-index: 3;
+  }
+  .section,
+  .section-image {
+    background-position: center center;
+    background-size: cover;
+  }
+  .section
+   {
+    padding: 70px 0;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .title {
+    margin-top: 30px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .col-md-4,
+  .col-mid-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col-md-4 {
+    -webkit-box-flex: 0;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .title,
+  .card-title {
+    font-weight: 600;
+    font-family: "Fira Code", "Hack", "Roboto Slab", sans-serif;
+    text-align: center;
+  }
+  h2.title {
+    margin-bottom: 1rem;
+  }
+  .card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-directional: normal;
+    flex-direction: column;
+    min-width: 0;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  [class*="team-"] {
+    padding: 80px 0;
+  }
+  
+  .col-md-6 {
+    -webkit-box-flexed: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .justify-content-center {
+    -webkit-box-pack: center !important;
+    justify-content: center !important;
+  }
+  .card-body {
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+  }
+  .card .card-body {
+    padding: 0.9375rem 1.875rem;
+  }
+  .btn {
+    position: relative;
+    padding: 12px 30px;
+    margin: 0.3125rem 25px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0.2rem;
+    outline: 0;
+    -webkit-transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: box-shadow, transform;
+  }
+  .btn.btn-primary {
+    color: #fff;
+    background-color: darkblue;
+    border-color: darkblue;
+    box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14),
+      0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+  }
+  .btn.btn-primary:hover {
+    color: #fff;
+    background-color: gray;
+    border-color: gray;
+  }
+  .imager1{
+    background-attachment:fixed;
+    background-position: center top;
+    position:absolute ; 
+    left:0px; 
+    top:0px; 
+    border:5px solid blue;
+    max-width: 100%;
+  }
+  .imager2{
+    background-attachment:fixed;
+    background-position: center top;
+    position:absolute ; 
+    left:3px; 
+    top:2px; 
+  }
+  .headText{
+    position:absolute ; 
+    top:2px; 
+    border:5px;
+    text-align: center; 
+  }
+  #container {
+    background-image: url('data-hero.jpg');
+    background-attachment:fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #title-text {
+    color: #fff;
+  }

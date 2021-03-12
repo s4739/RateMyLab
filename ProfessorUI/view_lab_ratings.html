@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang= "en" dir= "ltr">
+
+<!-- header stuff goes here -->
+  <head>
+    <meta charset = "utf-8">
+    <title>Rate My Lab (Professor) - Welcome!</title>
+    <link href="/img/labrate_icon.png" type="image/png" rel="shortcut icon" />
+    <link rel = "stylesheet" href = "bootstrap/css/bootstrap.css"> 
+    <link rel = "stylesheet" href = "bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"><!-- specifies to use css file for stylesheet -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <!-- body stuff goes here -->
+  <body class="banner-bg">
+    <!-- <a class="btn btn-primary btn-outline-primary" href="/home">Back</a><br> should log user out -->
+    
+    <div class="container login-container">
+        <h1 class="font-weight-bold text-white">View Lab Ratings</h1>
+        <div class="row">
+            <div class="col-12 login-form-1 bg-light">
+                <form method="post" action="controllers/view_detailed.php" class="col-12 col-lg-8 col-md-10">
+                    <div class="form-group row">
+                        <label class="col-1" >  </label>
+                        <label class="col-5 ForgetPwd" >Lab Name </label>
+                        <label class="col-3 ForgetPwd" >Questions </label>
+                        <label class="col-3 ForgetPwd" >Rating </label>
+                    </div>
+                    <div class="form-group row">
+                        <input type="radio" name="lab" value="lab_1" class="form-control col-1" required />
+                        <h6 class="ForgetPwd font-weight-bold col-5">Lab 1: </h6>
+                        <label class="ForgetPwd font-weight-bold col-3">2</label>
+                        <label class="ForgetPwd font-weight-bold col-3">5</label>
+                    </div>
+                    <div class="form-group row">
+                        <input type="radio" name="lab" value="lab_2" class="form-control col-1" />
+                        <h6 class="ForgetPwd font-weight-bold col-5">Lab 2: </h6>
+                        <label class="ForgetPwd font-weight-bold col-3">4</label>
+                        <label class="ForgetPwd font-weight-bold col-3">2</label>
+                    </div>
+                    <div class="form-group row">
+                        <input type="radio" name="lab" value="lab_3" class="form-control col-1" />
+                        <h6 class="ForgetPwd font-weight-bold col-5">Lab 3: </h6>
+                        <label class="ForgetPwd font-weight-bold col-3">1</label>
+                        <label class="ForgetPwd font-weight-bold col-3">5</label>
+                    </div>
+                    <div class="form-group row">
+                        <input type="radio" name="lab" value="lab_4" class="form-control col-1" />
+                        <h6 class="ForgetPwd font-weight-bold col-5">Lab 4: </h6>
+                        <label class="ForgetPwd font-weight-bold col-3">2</label>
+                        <label class="ForgetPwd font-weight-bold col-3">5</label>
+                    </div>
+                    <div class="form-group d-flex justify-content-center row">
+                        <input type="submit" name="config_lab" class="btnSubmit col-4 offset-1" value="View Detailed" />
+                        <a class="btnSubmit col-4 offset-1 text-center" href="./view_rating.html">Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
